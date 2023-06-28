@@ -1,4 +1,5 @@
 import pygame
+
 pygame.init()
 pygame.font.init()
 
@@ -21,4 +22,3 @@ SNAKE_VELOCITY = PIXEL_SIZE
 
 with open("utils/record.txt", "r") as file:
     current_record = int(file.read())
-
