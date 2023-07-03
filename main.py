@@ -7,7 +7,7 @@ SCREEN = pygame.display.set_mode((WIDTH, HEIGHT))
 pygame.display.set_caption("Snake")
 
 
-def draw_screen(screen, snake, fruit, grid):
+def draw_screen(screen: pygame.Surface, snake: Snake, fruit: Fruit, grid: Grid):
     score_text = SCORE_FONT.render("Score: " + str(snake.fruits_eaten), 1, WHITE)
     screen.blit(
         score_text,
